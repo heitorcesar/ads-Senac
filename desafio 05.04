@@ -1,0 +1,12 @@
+#se a sentença1 e a sentença2 forem "sim", haverá praia
+#todas as outras sequências serão netflix 
+
+sentença1 = input('no momento tem sol? Sim/Não')
+if (sentença1 == 'sim' or sentença1 == 'Sim'):
+    sentença2 = input('você tem dinheiro no momento?')
+    if(sentença2 == 'Sim' or sentença2 == 'sim'):
+        print('praia')
+    else:
+        print('netflix')
+else:
+    print('netflix')
