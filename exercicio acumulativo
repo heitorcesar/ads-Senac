@@ -1,0 +1,535 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A letra f é uma consoante\n"
+     ]
+    }
+   ],
+   "source": [
+    "#quetao 1\n",
+    "\n",
+    "letra = (input('Digite um letra do alfabeto:'))\n",
+    "vogais = ['a','e','i','o','u']\n",
+    "\n",
+    "if(letra in vogais):\n",
+    "    print ( 'A letra', letra, 'é uma vogal')\n",
+    "else:\n",
+    "    print  ('A letra', letra, 'é uma consoante')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Compre o produto C\n"
+     ]
+    }
+   ],
+   "source": [
+    "# questao 2\n",
+    "\n",
+    "produtoA = float(input('Digite o valor do produto A'))\n",
+    "produtoB = float(input('Digite o valor do produto B'))\n",
+    "produtoC = float(input('Digite o valor do produto C'))\n",
+    "\n",
+    "if(produtoA <= produtoB and produtoA <= produtoC):\n",
+    "    print ('Compre o produto A')\n",
+    "\n",
+    "elif(produtoB <= produtoA and produtoB <= produtoC):\n",
+    "    print ('Compre o produto B')\n",
+    "\n",
+    "else:\n",
+    "     print ('Compre o produto C')\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "34.0 12.0 1.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#questao3\n",
+    "numero1= float(input('Digite um número'))\n",
+    "numero2 = float(input('Digite outro número'))\n",
+    "numero3 = float(input('Digite outro número'))\n",
+    "\n",
+    "if(numero3 > numero2 > numero1):\n",
+    "    print(numero3, numero2, numero1)\n",
+    "\n",
+    "elif(numero3 > numero1 > numero2):\n",
+    "    print(numero3 ,numero1 ,numero2)\n",
+    "\n",
+    "elif(numero2 > numero3 > numero1):\n",
+    "    print(numero2 ,numero3 ,numero1)\n",
+    "\n",
+    "elif(numero2 > numero1 > numero3):\n",
+    "    print(numero2 ,numero1 ,numero3)\n",
+    "\n",
+    "elif(numero1 > numero2 > numero3):\n",
+    "    print(numero1 ,numero2 ,numero3)\n",
+    "\n",
+    "else:\n",
+    "    print(numero1 ,numero3 ,numero2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Boa tarde\n"
+     ]
+    }
+   ],
+   "source": [
+    "#questao 4\n",
+    "turno = (input('Em qual turno vc estuda? M-maturino, V-vespertino ou N-norturno '))\n",
+    "manha = ['M','m']\n",
+    "tarde = ['V','v']\n",
+    "noite = ['N', 'n']\n",
+    "\n",
+    "if(turno in manha):\n",
+    "    print('Bom dia')\n",
+    "elif(turno in tarde):\n",
+    "    print('Boa tarde')\n",
+    "elif(turno in noite):\n",
+    "    print('Boa noite')\n",
+    "else:\n",
+    "    print('valor invalido!')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5  = Quinta\n"
+     ]
+    }
+   ],
+   "source": [
+    "#questao5\n",
+    "\n",
+    "pergunta= int(input('Digite um número de 1 a 6'))\n",
+    "\n",
+    "if(pergunta == 1):\n",
+    "    print(pergunta,' = Domingo')\n",
+    "elif(pergunta == 2):\n",
+    "    print(pergunta,' = Segunda')\n",
+    "elif(pergunta == 3):\n",
+    "    print(pergunta,' = Terça')\n",
+    "elif(pergunta == 4):\n",
+    "    print(pergunta,' = Quarta')\n",
+    "elif(pergunta == 5):\n",
+    "    print(pergunta,' = Quinta')\n",
+    "elif(pergunta == 6):\n",
+    "    print(pergunta,' = Sexta')\n",
+    "else:\n",
+    "    print(pergunta,'= Sábado')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "O aluno foi REPROVADO! Com o conceito E Sua média foi: 3.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#questao 6\n",
+    "nota1= float(input('digite a primeira nota'))\n",
+    "nota2= float(input('digite a segunda nota'))\n",
+    "\n",
+    "\n",
+    "media = (nota1 + nota2 ) / 2\n",
+    "conceito = ['A','B','C','D','E']\n",
+    "\n",
+    "if(media >= 9 and  media <= 10 ):\n",
+    "    print('O aluno foi APROVADO! Com o conceito', conceito[0],'Sua média foi:',media)\n",
+    "elif(media >= 7.5 and  media <= 8.9 ):\n",
+    "    print('O aluno foi APROVADO! Com o conceito', conceito[1],'Sua média foi:',media)\n",
+    "elif(media >= 6.0 and  media <= 7.4 ):\n",
+    "    print('O aluno foi APROVADO! Com o conceito', conceito[2],'Sua média foi:',media)\n",
+    "elif(media >= 4.0 and  media <= 5.9 ):\n",
+    "    print('O aluno foi REPROVADO! Com o conceito', conceito[3],'Sua média foi:',media)\n",
+    "else:\n",
+    "    print('O aluno foi REPROVADO! Com o conceito', conceito[4],'Sua média foi:',media)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1900 Não é um ano bissexto\n"
+     ]
+    }
+   ],
+   "source": [
+    "#questao 7\n",
+    "\n",
+    "ano = int(input('Digite um ano para saber se e bissexto'))\n",
+    "\n",
+    "if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):\n",
+    "    print(ano,'É um ano bissexto')\n",
+    "else:\n",
+    "    print(ano,'Não é um ano bissexto')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A subtração dos dois números é: -3.0\n",
+      "O número é impar \n",
+      "O número é negativo\n",
+      "O número é inteiro\n"
+     ]
+    }
+   ],
+   "source": [
+    "#questao 8\n",
+    "\n",
+    "numero1= float(input('digite um número'))\n",
+    "numero2= float(input('digite outro número'))\n",
+    "operacao = (input('Informe se vc quer somar, subtrair, multiplicar, dividir ou exponenciar'))\n",
+    "\n",
+    "soma = numero1 + numero2\n",
+    "subtrair = numero1 - numero2\n",
+    "multiplicar = numero1 * numero2\n",
+    "dividir = numero1 / numero2\n",
+    "exponenciar = numero1 ** numero2\n",
+    "\n",
+    "if(operacao == 'somar'):\n",
+    "    print('A soma dos dois números é:', soma)\n",
+    "    if (soma % 2 == 0):\n",
+    "     print (\"O número é par\")\n",
+    "    else:\n",
+    "     print (\"O número é impar \")\n",
+    "    if(soma > 0 ):\n",
+    "      print('O número é positivo')\n",
+    "    else:\n",
+    "      print('O número é negativo')  \n",
+    "    if( soma // 1 == soma ):\n",
+    "      print('O número é inteiro')\n",
+    "    else:\n",
+    "      print('O número é decimal')    \n",
+    "\n",
+    "elif(operacao == 'subtrair'):\n",
+    "    print('A subtração dos dois números é:', subtrair)\n",
+    "    if (subtrair % 2 == 0):\n",
+    "         print (\"O número é par\")\n",
+    "    else:\n",
+    "        print (\"O número é impar \")\n",
+    "    if(subtrair > 0 ):\n",
+    "        print('O número é positivo')\n",
+    "    else:\n",
+    "        print('O número é negativo')  \n",
+    "    if( subtrair// 1 == subtrair ):\n",
+    "        print('O número é inteiro')\n",
+    "    else:\n",
+    "        print('O número é decimal')   \n",
+    "\n",
+    "elif(operacao == 'multiplicar'):\n",
+    "    print('A multiplicação dos dois números é:', multiplicar)\n",
+    "    if (multiplicar % 2 == 0):\n",
+    "         print (\"O número é par\")\n",
+    "    else:\n",
+    "        print (\"O número é impar \")\n",
+    "    if(multiplicar > 0 ):\n",
+    "        print('O número é positivo')\n",
+    "    else:\n",
+    "        print('O número é negativo')  \n",
+    "    if( multiplicar // 1 == multiplicar ):\n",
+    "        print('O número é inteiro')\n",
+    "    else:\n",
+    "        print('O número é decimal')   \n",
+    "\n",
+    "elif(operacao == 'dividir'):\n",
+    "    print('A divisão dos dois números é:', dividir)\n",
+    "    if (dividir % 2 == 0):\n",
+    "         print (\"O número é par\")\n",
+    "    else:\n",
+    "        print (\"O número é impar \")\n",
+    "    if(dividir > 0 ):\n",
+    "        print('O número é positivo')\n",
+    "    else:\n",
+    "        print('O número é negativo')  \n",
+    "    if( dividir // 1 == dividir ):\n",
+    "        print('O número é inteiro')\n",
+    "    else:\n",
+    "        print('O número é decimal')   \n",
+    "\n",
+    "elif(operacao == 'exponenciar'):\n",
+    "    print('A exponeciação dos dois números é:', exponenciar)\n",
+    "    if (exponenciar % 2 == 0):\n",
+    "         print (\"O número é par\")\n",
+    "    else:\n",
+    "        print (\"O número é impar \")\n",
+    "    if(exponenciar> 0 ):\n",
+    "        print('O número é positivo')\n",
+    "    else:\n",
+    "        print('O número é negativo')  \n",
+    "    if( exponenciar // 1 == exponenciar ):\n",
+    "        print('O número é inteiro')\n",
+    "    else:\n",
+    "        print('O número é decimal')   \n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Idade fora do intervalo válido (0 a 150). Tente novamente.\n"
+     ]
+    }
+   ],
+   "source": [
+    "#questao 9 \n",
+    "idade = int(input(\"Por favor, digite sua idade: \"))\n",
+    "\n",
+    "if(idade >= 0 and idade <= 150):\n",
+    "    print('A sua idade é:', idade)\n",
+    "else:\n",
+    "    print(\"Idade fora do intervalo válido (0 a 150). Tente novamente.\")\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A média é: 6.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "#questao 10 \n",
+    "numeros = []\n",
+    "soma = 0\n",
+    "\n",
+    "for i in range(5):\n",
+    "    numero = float(input('Digite o valor: '))\n",
+    "    numeros.append(numero)\n",
+    "    soma += numero\n",
+    "\n",
+    "media = soma / len(numeros)\n",
+    "print(\"A média é:\", media)\n",
+    "print(\"A soma é:\", soma)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5 É um número primo\n"
+     ]
+    }
+   ],
+   "source": [
+    "#questao 11\n",
+    "pergunta =int(input(\"Veja se o número é primo: \"))\n",
+    "\n",
+    "funcao = 0\n",
+    "\n",
+    "for numeroPrimo in range (2,pergunta):\n",
+    "    if(pergunta % numeroPrimo == 0):\n",
+    "        print('Divisivel por', numeroPrimo)\n",
+    "        funcao += 1\n",
+    "    \n",
+    "if(funcao == 0):\n",
+    "    print(pergunta,'É um número primo')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#questao 12\n",
+    "\n",
+    "numeros = []\n",
+    "soma = 0\n",
+    "\n",
+    "for i in range(5):\n",
+    "    numero = float(input('Informe as 5 temperaturas: '))\n",
+    "    numeros.append(numero)\n",
+    "    soma += numero\n",
+    "\n",
+    "media = soma / len(numeros)\n",
+    "menorValor = min(numeros)\n",
+    "maiorValor = max(numeros)\n",
+    "\n",
+    "print(\"A média da temepratura é:\", media)\n",
+    "print(\"O menor valor da temepratura é:\", menorValor)\n",
+    "print(\"O maior da temepratura é:\", maiorValor)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#questao 13\n",
+    "\n",
+    "numero = float(input('Informe o valor do seu saldo médio '))\n",
+    "\n",
+    "saldo2 = 20/100 * numero\n",
+    "saldo3 = 30/100 * numero\n",
+    "saldo4 = 40/100 * numero \n",
+    "\n",
+    "if(numero >= 0 and numero <= 200):\n",
+    "    print('Seu saldo médio é:', numero,',e seu percentual é 0')\n",
+    "elif(numero > 200 and numero <= 400):\n",
+    "    print('Seu saldo médio é:', numero,',e seu percentual é', saldo2)\n",
+    "elif(numero > 400 and numero <= 600):\n",
+    "    print('Seu saldo médio é:', numero,',e seu percentual é', saldo3)\n",
+    "else:\n",
+    "    print('Seu saldo médio é:', numero,',e seu percentual é', saldo4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#questao 14\n",
+    "\n",
+    "idade= int(input('Informe a sua idade '))\n",
+    "\n",
+    "anoAtual = 2024\n",
+    "idadeAposentar = 65 - idade\n",
+    "\n",
+    "if(idade < 65):\n",
+    "    print(' O ano que você vai se aposentar é:', anoAtual + idadeAposentar)\n",
+    "else:\n",
+    "    print(' Você vai se aposentar em: 2024')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "O seu salario é: 3946.7520999999997\n"
+     ]
+    }
+   ],
+   "source": [
+    "#questao 15\n",
+    "\n",
+    "salario = float(input('Informe o valor do seu salário bruto  '))\n",
+    "\n",
+    "saldo1 = 3/100 * salario\n",
+    "saldo2 = 10.5/100 * salario\n",
+    "saldo3 = 18/100 * salario\n",
+    "saldo4 = 25.5/100 * salario\n",
+    "saldo5 = 30.5/100 * salario\n",
+    "\n",
+    "if(salario <= 2112):\n",
+    "    print('O seu salario é:', salario - saldo1)\n",
+    "elif(salario > 2112 and salario <= 2826.65):\n",
+    "    print('O seu salario é:', salario -saldo2 )\n",
+    "elif(salario > 2826.65 and salario <= 3751.05):\n",
+    "    print('O seu salario é:',salario - saldo3 )\n",
+    "elif(salario >3751.05 and salario <= 4664.68):\n",
+    "    print('O seu salario é:',salario - saldo4 )\n",
+    "else:\n",
+    "    print('O seu salario é:', salario -saldo5 )\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
